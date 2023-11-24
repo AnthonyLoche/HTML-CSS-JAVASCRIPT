@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #192312;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 30px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #192312;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+select{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #192312;
+    color: #fff;
+    cursor: pointer;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #192312;
+    color: #fff;
+}
+
+#carrinho{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #192312;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: white;    
+    color: #192312;
+    border-bottom: 2px solid #192312;
+    border-top: 2px solid #192312;
+    border-radius: 0;
+}

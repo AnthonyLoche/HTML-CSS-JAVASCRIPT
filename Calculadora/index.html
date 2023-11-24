@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkando HTML com JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Calculadora</h1>
+    </header>
+    <main>
+        <div class="center">
+            <p id="boasVindas">Bem vindo</p>
+        </div>
+        <div class="center">
+            <h3 id="idiomaSelecionado">Selecione o idioma</h3>
+        <select name="" id="idioma">
+            <option value="pt">Portugues</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Frances</option>
+            <option value="en">Ingles</option>
+        </select>
+    </div>
+        <div id="calculadora">
+            <input id="visor" disabled></input>
+
+            <div id="botoes">
+                <button id="somar">Somar</button>
+                <button id="subtrair">Subtrair</button>
+                <button id="multiplicar">Multiplicar</button>
+                <button id="divisao">Dividir</button>
+            </div>
+            <div id="valores">
+                <br>
+                <button id="limpar">AC</button>
+                <br>
+                <button class="numeros" onclick="add('1')">1</button>
+                <button class="numeros" onclick="add('2')">2</button>
+                <button class="numeros" onclick="add('3')">3</button>
+                <button class="numeros" onclick="add('4')">4</button>
+                <button class="numeros" onclick="add('5')">5</button>
+                <button class="numeros" onclick="add('6')">6</button>
+                <button class="numeros" onclick="add('7')">7</button>
+                <button class="numeros" onclick="add('8')">8</button>
+                <button class="numeros" onclick="add('9')">9</button>
+                <br>
+                <button class="numeros" onclick="add('0')">0</button>
+            </div>
+            <div id="resultado">
+                <button id="igual">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>Anthony Gabriel &copy;</h1>
+    </footer>
+</body>
+
+<script src="traduzir.js"></script>
+<script src="Math.js"></script>
+
+</html>
