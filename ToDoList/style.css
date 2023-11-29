@@ -68,7 +68,7 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     background-color: #192312;
     color: #fff;
     border-radius: 5px;
@@ -81,4 +81,81 @@ button:hover{
     border-bottom: 2px solid #192312;
     border-top: 2px solid #192312;
     border-radius: 0;
+}
+
+li.item{
+    background-color: white;
+    color: #192312;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+ul#lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#erro {
+    width: 100%;
+    height: 60vw;
+    background-color: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50pt;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+@keyframes erro {
+    0% {
+        opacity: 0;
+        z-index: 10;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+#sla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px auto;
+    
+}
+
+
+ul#finalizadas{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
 }

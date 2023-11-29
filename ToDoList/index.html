@@ -16,21 +16,28 @@
         <div id="inputs">
             <input type="text" id="tarefa" placeholder="Digite sua tarefa aqui">
             <select name="" id="opcoes">
-                <option value="comida">Comida</option>
-                <option value="limpeza">Limpeza</option>
-                <option value="higiene">Higiene</option>
-                <option value="acessorios">Acessórios</option>
-                <option value="lazer">Lazer</option>
+                <option value="Comida">Comida</option>
+                <option value="Limpeza">Limpeza</option>
+                <option value="Higiene">Higiene</option>
+                <option value="Acessórios">Acessórios</option>
+                <option value="Lazer">Lazer</option>
             </select>            
             <button id="add" type="submit">Adicionar</button>
+            <button id="limpar">Limpar Carrinho</button>
         </div>
     <div id="carrinho">
         <h2>Lista de Compras</h2>
+        <ul id="lista"></ul>
+    </div>
+    <div id="sla">
+        <h2>Compras Realizadas</h2>
+        <ul id="finalizadas">
         
+        </ul>
     </div>
     </main>
 
-
+<div id="erro">ERRO, LARGA MÃO DE IDIOTISSE</div>
 </body>
 <script src="script.js"></script>
 </html>

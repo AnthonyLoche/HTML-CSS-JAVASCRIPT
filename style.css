@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header {
     width: 100%;
     height: 60px;
     text-align: center;
@@ -16,7 +16,7 @@ header{
     align-items: center;
 }
 
-main{
+main {
     margin: 30px auto;
     width: 50%;
     display: grid;
@@ -24,7 +24,7 @@ main{
     gap: 30px;
 }
 
-.item{
+.item {
     margin: auto;
     width: 100%;
     display: flex;
@@ -33,7 +33,8 @@ main{
     flex-direction: column;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
+
