@@ -47,6 +47,8 @@ function remover(posicao) {
     lista.removeChild(document.getElementById(posicao));
 }
 
-function feitas() {
+function feitas(posicao) {
+    tarefas--;
+    lista.removeChild(document.getElementById(posicao));
      finalizadas.innerHTML += `<li class="item" id=${tarefas}>${option.value} - ${input.value}`
 }
