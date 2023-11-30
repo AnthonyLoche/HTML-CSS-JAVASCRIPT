@@ -10,34 +10,42 @@ let valorDois = "";
 
 botaoSomar.addEventListener("click", function () {
     operacao = "+";
-    visor.value += " + ";
+    visor.innerHTML += " + ";
 });
 
 botaoSubtrair.addEventListener("click", function () {
     operacao = "-";
-    visor.value += " - ";
+    visor.innerHTML += " - ";
 });
 
 botaoMultiplicar.addEventListener("click", function () {
     operacao = "*";
-    visor.value += " x ";
+    visor.innerHTML += " x ";
 })
 
 botaoDividir.addEventListener("click", function () {
     operacao = "/";
-    visor.value += " / ";
+    visor.innerHTML += " / ";
 });
 
 function add(numero) {
 
-    if (operacao === "") {
-        valorUm += numero;
-        visor.value += numero;
-    }
+    if (resultado == 0) {
 
-    else if (operacao === "+" || operacao == "-" || operacao == "*" || operacao == "/") {
-        valorDois += numero;
-        visor.value += numero;
+        if (operacao === "") {
+            valorUm += numero;
+            visor.innerHTML += numero;
+        }
+
+        else if (operacao === "+" || operacao == "-" || operacao == "*" || operacao == "/") {
+            valorDois += numero;
+            visor.innerHTML += numero;
+        }
+    }
+    else {
+        valorUm = resultado;
+        valorDois = numero;
+        visor.innerHTML = `${valorUm} ${operacao} ${valorDois}`;
     }
 }
 
@@ -47,30 +55,30 @@ function calcular() {
     valorUm = Number(valorUm);
     valorDois = Number(valorDois);
     if (valorDois == "0" || valorUm == "0" || valorDois == 0 || valorUm == 0) {
-        visor.value = "ERRO";
+        visor.innerHTML = "ERRO";
     }
     else if (operacao == "+") {
-        resultado += Number(valorUm) + Number(valorDois);
-        visor.value = resultado;
+        resultado = Number(valorUm) + Number(valorDois);
+        visor.innerHTML = resultado + "<br> <br> <br>" + `${valorUm} + ${valorDois}`;
     }
     else if (operacao == "-") {
-        resultado += Number(valorUm) - Number(valorDois);
-        visor.value = resultado;
+        resultado = Number(valorUm) - Number(valorDois);
+        visor.innerHTML = resultado + "<br> <br> <br>" + `${valorUm} - ${valorDois}`;
     }
     else if (operacao == "*") {
-        resultado += Number(valorUm) * Number(valorDois);
-        visor.value = resultado;
+        resultado = Number(valorUm) * Number(valorDois);
+        visor.innerHTML = resultado + "<br> <br> <br>" + `${valorUm} x ${valorDois}`;
     }
     else if (operacao == "/") {
-        resultado += Number(valorUm) / Number(valorDois);
-        visor.value = resultado;
+        resultado = Number(valorUm) / Number(valorDois);
+        visor.innerHTML = resultado + "<br> <br> <br>" + `${valorUm} / ${valorDois}`;
     }
 }
 
 document.querySelector("#igual").addEventListener("click", calcular);
 
 document.querySelector("#limpar").addEventListener("click", function () {
-    visor.value = "";
+    visor.innerHTML = "";
     valorUm = "";
     valorDois = "";
     operacao = "";

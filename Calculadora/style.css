@@ -57,9 +57,10 @@ main{
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
+    justify-content: flex-start;
+    color: blue;
     font-size: 30px;
+    padding: 15px;
 }
 
 button{
