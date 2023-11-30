@@ -8,6 +8,59 @@ let operacao = "";
 let valorUm = "";
 let valorDois = "";
 
+document.addEventListener("keypress", function (event) {
+    if (event.key == "Enter") {
+        calcular();
+    }
+    if (event.key == "1") {
+        add(1);
+    }
+    if (event.key == "2") {
+        add(2);
+    }
+    if (event.key == "3") {
+        add(3);
+    }
+    if (event.key == "4") {
+        add(4);
+    }
+    if (event.key == "5") {
+        add(5);
+    }
+    if (event.key == "6") {
+        add(6);
+    }
+    if (event.key == "7") {
+        add(7);
+    }
+    if (event.key == "8") {
+        add(8);
+    }
+    if (event.key == "9") {
+        add(9);
+    }
+    if (event.key == "0") {
+        add(0);
+    }
+    if (event.key == "+") {
+        operacao = "+";
+        visor.innerHTML += " + ";
+    }
+    if (event.key == "-") {
+        operacao = "-";
+        visor.innerHTML += " - ";
+    }
+    if (event.key == "*") {
+        operacao = "*";
+        visor.innerHTML += " x ";
+    }
+    if (event.key == "/") {
+        operacao = "/";
+        visor.innerHTML += " / ";
+    }
+    
+});
+
 botaoSomar.addEventListener("click", function () {
     operacao = "+";
     visor.innerHTML += " + ";
