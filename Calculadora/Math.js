@@ -137,3 +137,14 @@ document.querySelector("#limpar").addEventListener("click", function () {
     operacao = "";
     resultado = 0;
 });
+
+function apagar() {
+    
+    visor.innerHTML = visor.innerHTML.slice(0, -1);
+    if (operacao == "") {
+        valorUm = valorUm.slice(0, -1);
+    }
+    else {
+        valorDois = valorDois.slice(0, -1);
+    }
+}
